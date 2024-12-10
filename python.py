@@ -77,4 +77,27 @@ def searchInsert( nums, target):
 
     return left
 
-print(searchInsert([1,7,3,4,6],2))
+# print(searchInsert([1,7,3,4,6],2))
+
+def list_to_integer(digits):
+    number = 0
+    for digit in digits:
+        number = number * 10 + digit
+       
+    return number +1
+
+# print(list_to_integer([1,2,3]))
+
+
+def plusOne(self, digits):
+
+ n = len(digits)
+
+
+for i in range(n - 1, -1, -1):
+    if digits[i] < 9:
+        digits[i] += 1
+        return digits  
+    digits[i] = 0 
+
+return [1] + digits
