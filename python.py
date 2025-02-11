@@ -101,3 +101,18 @@ for i in range(n - 1, -1, -1):
     digits[i] = 0 
 
 return [1] + digits
+
+#febinoci 
+'''
+def febinoci(n, a=0, b=1, sequence=None):
+    if sequence is None:
+        sequence = [a]
+    if n == 1:
+        sequence.append(b)
+        print(sequence)
+        return
+    sequence.append(b)
+    febinoci(n-1, b, a+b, sequence)
+
+febinoci(10)
+'''

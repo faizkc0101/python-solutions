@@ -1,16 +1,44 @@
-#febinoci 
+#10)merge two list the following condition
 '''
-def febinoci(n, a=0, b=1, sequence=None):
-    if sequence is None:
-        sequence = [a]
-    if n == 1:
-        sequence.append(b)
-        print(sequence)
-        return
-    sequence.append(b)
-    febinoci(n-1, b, a+b, sequence)
+def merge():
 
-febinoci(10)
+    l1 = list(map(int, input('Enter first list:  ').split(',')))
+    l2 = list(map(int, input('Enter second list :').split(',')))
+    list3=[]
+
+    sample = l1+ l2
+    for i in sample:
+        if i % 5==0:
+            list3.append(i)
+    print(list3)
+        
+merge()
+'''
+
+
+#9)check palindrome numbers
+'''
+def revere(num):
+    num2 = 0
+    while num > 0:
+        rem = num % 10
+        num2 = (num2*10)+rem
+        num = num // 10
+    return num2
+
+
+print(revere(123))
+'''
+'''
+def check(num):
+    num1=str(num)
+    num2 =num1[::-1]
+    if num1 == num2:
+       print('yes')
+    else:
+        print('no')
+
+check(121)
 '''
    
 
