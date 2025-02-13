@@ -1,3 +1,56 @@
+# star pattern
+'''
+for i in range(6,0,-1):
+    for j in range(i):
+        print("*",end='')
+    print('')
+'''
+#13 ) multiple table
+'''
+for i in range(1,11):
+    for j in range(1,11):
+        print(i,'*',j,'=',i*j)
+    print('ff')
+'''    
+#12) calculate income tax
+
+'''
+income = int(input('enter your income'))
+tax_payable = 0
+print("Given income", income)
+
+if income <= 10000:
+    tax_payable = 0
+elif income <= 20000:
+    # no tax on first 10,000
+    x = income - 10000
+    # 10% tax
+    tax_payable = x * 10 / 100
+else:
+    # first 10,000
+    tax_payable = 0
+
+    # next 10,000 10% tax
+    tax_payable = 10000 * 10 / 100
+
+    # remaining 20%tax
+    tax_payable += (income - 20000) * 20 / 100
+
+print("Total tax to pay is", tax_payable)
+'''
+
+# 11)Get each digit from a number in the reverse order.
+'''
+number = 1234
+print(number)
+while 0 < number :
+    mod = number % 10
+    number = number //10
+    print(mod,end='')
+
+'''
+
+
 #10)merge two list the following condition
 '''
 def merge():
@@ -19,7 +72,7 @@ merge()
 #9)check palindrome numbers
 '''
 def revere(num):
-    num2 = 0
+    num2 = 0 
     while num > 0:
         rem = num % 10
         num2 = (num2*10)+rem
